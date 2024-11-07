@@ -87,7 +87,7 @@ function resizeAndDownload(){
     canvas.width = widthInput.value;
     canvas.height = heightInput.value;
 
-    ctx.drawImage(previewImg, 0, 0, canvas.width, canvas.height, 0,0, canvas.width, canvas.height);
+    ctx.drawImage(previewImg, 0, 0, canvas.width, canvas.height);
     a.href= canvas.toDataURL(wantedType,imgQuality);
     a.download = new Date().getTime();
     a.click()
